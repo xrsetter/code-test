@@ -14,7 +14,7 @@ public class ClockConversionService : IClockConversionService
     public Task<int> CalculateTimeAngle(TimeSpan time, CancellationToken cancellationToken)
     {
         var hourHand = time.Hours > 12 ? time.Hours - 12 : time.Hours;
-        var minuteHand = (int)Math.Floor(time.Minutes / 60.0 * 12);
+        var minuteHand = time.Minutes == 0 ? 12 : (int)Math.Floor(time.Minutes / 60.0 * 12);
         return Task.FromResult(_conversionHelper[hourHand] + _conversionHelper[minuteHand]);
     }
 }
