@@ -1,0 +1,6 @@
+@CodeTest.Server_HostAddress = http://localhost:5043
+
+GET {{CodeTest.Server_HostAddress}}/calculations/calulatetimeangle/
+Accept: application/json
+
+###

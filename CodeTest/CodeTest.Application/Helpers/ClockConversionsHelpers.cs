@@ -1,0 +1,21 @@
+﻿namespace CodeTest.Application.Helpers;
+
+internal static class ClockConversionsHelpers
+{
+
+    internal static Dictionary<int, int> HourConversion = new()
+    {
+        {12, 0},
+        {1, 30},
+        {2, 60},
+        {3, 90},
+        {4, 120},
+        {5, 150},
+        {6, 180},
+        {7, 210},
+        {8, 240},
+        {9, 270},
+        {10, 300},
+        {11, 330},
+    };
+}
