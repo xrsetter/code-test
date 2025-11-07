@@ -1,1 +1,2 @@
-# code-test
+# Code Test
+This is a simple .NET 9 Web API application that calculates the angles of the hands of a clock at a given time. It will run right in the browser (set CodeTest.Server as the startup project if it is not selected), and is accessible through the Swagger UI page that should load on startup. I built this with Domain Driven Development (DDD) in mind, but the Domain and Infrastructure projects are relatively empty for this particular amount of limited functionality. However, I implemented a small amout of middleware including CQRS patterns using Mediatr, and it is built to be easily scaled and comes with NUnit unit tests.
