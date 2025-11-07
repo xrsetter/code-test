@@ -2,6 +2,7 @@
 using CodeTest.Application.Helpers;
 
 namespace CodeTest.Application.Services;
+
 public class ClockConversionService : IClockConversionService
 {
     private readonly Dictionary<int, int> _conversionHelper;
